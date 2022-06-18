@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mobile_robot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00486526512181433 -7.85835563288373E-10 -0.0184428013943415"
+        rpy="0 0 0" />
+      <mass
+        value="0.293586260348177" />
+      <inertia
+        ixx="0.000244242934254728"
+        ixy="-2.71828382510568E-07"
+        ixz="-1.70039057888651E-20"
+        iyy="0.00057111915591242"
+        iyz="-4.49390529663087E-15"
+        izz="0.000784536902209983" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_right_wheel">
+    <inertial>
+      <origin
+        xyz="3.01855201736978E-08 -6.72626215836303E-09 -0.00325964604168405"
+        rpy="0 0 0" />
+      <mass
+        value="0.0541447668531422" />
+      <inertia
+        ixx="7.13431059051104E-06"
+        ixy="5.77515673296557E-11"
+        ixz="6.16963411483874E-11"
+        iyy="7.13449961039196E-06"
+        iyz="-6.49086098732672E-11"
+        izz="7.23322479007779E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/front_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/front_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0754647480499235 -0.109000000000009 -0.0355000000000003"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_wheel" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="front_left_wheel">
+    <inertial>
+      <origin
+        xyz="2.00938037597798E-08 6.60681920283679E-09 0.00325847879108343"
+        rpy="0 0 0" />
+      <mass
+        value="0.0541141190755611" />
+      <inertia
+        ixx="7.1496174996824E-06"
+        ixy="4.30881810374938E-12"
+        ixz="-5.40246020946302E-12"
+        iyy="7.14984293346284E-06"
+        iyz="-1.96607293017013E-11"
+        izz="7.25882917620081E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/front_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/front_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0754647480499234 0.109000000000005 -0.0355000000000003"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="back_right_wheel">
+    <inertial>
+      <origin
+        xyz="-1.9901451042692E-08 6.37679981041472E-09 -0.00325847890303455"
+        rpy="0 0 0" />
+      <mass
+        value="0.0541141189257862" />
+      <inertia
+        ixx="7.14961733654551E-06"
+        ixy="-4.26780738872087E-12"
+        ixz="-5.43517675984789E-12"
+        iyy="7.14984303657173E-06"
+        iyz="1.97521723769003E-11"
+        izz="7.25882918516444E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/back_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/back_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0895352519500855 -0.109000000000009 -0.0354999999999997"
+      rpy="1.57079632679489 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_right_wheel" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="back_left_wheel">
+    <inertial>
+      <origin
+        xyz="-3.02777120458897E-08 -6.78471834270056E-09 0.0032596460619585"
+        rpy="0 0 0" />
+      <mass
+        value="0.0541447663620295" />
+      <inertia
+        ixx="7.13431034064164E-06"
+        ixy="-5.78008304647155E-11"
+        ixz="6.17234948112197E-11"
+        iyy="7.13449946470013E-06"
+        iyz="6.47968748141945E-11"
+        izz="7.23322453994833E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/back_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/back_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0895352519500856 0.108999999999991 -0.0354999999999997"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_left_wheel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
